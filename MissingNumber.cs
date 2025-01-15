@@ -27,3 +27,25 @@ public class Solution {
         Console.WriteLine($"{sol.MissingNumber(nums)}");
     }
 }
+
+// using System;
+
+// public class Solution {
+//     public int MissingNumber(int[] nums) {
+//         int n = nums.Length;
+//         int expectedSum = n * (n + 1) / 2;
+//         int actualSum = 0;
+        
+//         foreach (int num in nums) {
+//             actualSum += num;
+//         }
+        
+//         return expectedSum - actualSum;
+//     }
+    
+//     static void Main() {
+//         Solution sol = new Solution();
+//         int[] nums = new int[] {1, 2};
+//         Console.WriteLine($"{sol.MissingNumber(nums)}");
+//     }
+// }
