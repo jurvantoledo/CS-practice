@@ -1,3 +1,15 @@
+/*
+    * EXPLANATION
+    * How This Works:
+    *
+    * Use an array charCount[26] to store occurrences of each letter in magazine.
+    * Traverse ransomNote:
+    * If a letter isn’t available (charCount[c - 'a'] == 0), return false.
+    * Otherwise, decrement its count.
+    *
+    * Return true if all letters are found.
+*/
+
 public class Solution {
     public bool CanConstruct(string ransomNote, string magazine) {
         int[] charCount = new int[26]; // To store letter frequencies
